@@ -1,0 +1,612 @@
+Instituto,Disciplina,Turma,Dia da Semana,Horário Inicio,Horário Fim,Sala,Docentes
+IC,MC001,MC001 A,Segunda,14:00,18:00,PB13,Sandra Eliza Fontes De Avila
+IC,MC009,MC009 A,Segunda,21:00,22:00,PB13,Andre Santanche
+IC,MC039,MC039 A,Sexta,14:00,15:00,CC85,Edmundo Roberto Mauro Madeira
+IC,MC102,MC102 A,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 B,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 C,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 D,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 E,Terça,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 F,Terça,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 G,Terça,19:00,21:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 H,Terça,19:00,21:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 I,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 J,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 K,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 L,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 M,Terça,10:00,12:00,SI05,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 N,Terça,10:00,12:00,SI03,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 O,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 P,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 R,Terça,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 S,Terça,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 X,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Y,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Z,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC202,MC202 A,Segunda,14:00,16:00,CC00,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 B,Segunda,16:00,18:00,CC00,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 E,Terça,21:00,23:00,CC00,Lehilton Lelis Chaves Pedrosa
+IC,MC202,MC202 G,Terça,16:00,18:00,CB11,Guilherme Pimentel Telles
+IC,MC202,MC202 H,Terça,16:00,18:00,CB11,Guilherme Pimentel Telles
+IC,MC322,MC322 A,Segunda,21:00,23:00,CC00,Marcelo Da Silva Reis
+IC,MC346,MC346 A,Segunda,16:00,18:00,CC53,Jacques Wainer
+IC,MC358,MC358 A,Terça,10:00,12:00,CB18,Pedro Jussieu De Rezende
+IC,MC358,MC358 B,Segunda,19:00,21:00,CB04,Hilder Vitor Lima Pereira
+IC,MC404,MC404 A,Segunda,14:00,16:00,CB03,Edson Borin
+IC,MC404,MC404 B,Segunda,14:00,16:00,CB03,Edson Borin
+IC,MC426,MC426 A,Terça,08:00,10:00,CC03,Breno Bernard Nicolau De Franca
+IC,MC458,MC458 A,Segunda,19:00,21:00,PB16,Orlando Lee
+IC,MC504,MC504 A,Segunda,19:00,21:00,CB10,Paulo Licio De Geus
+IC,MC536,MC536 A,Terça,21:00,23:00,CC53,Julio Cesar Dos Reis
+IC,MC558,MC558 A,Segunda,14:00,16:00,PB14,Santiago Valdes Ravelo
+IC,MC602,MC602 A,Terça,19:00,21:00,CB16,Ricardo Pannain
+IC,MC621,MC621 A,Sexta,14:00,18:00,CC00,Fabio Luiz Usberti
+IC,MC646,MC646 A,Segunda,16:00,18:00,CB11,Bruno Barbieri De Pontes Cafeo
+IC,MC656,MC656 A,Terça,08:00,10:00,CB07,Breno Bernard Nicolau De Franca
+IC,MC658,MC658 A,Segunda,14:00,16:00,CB11,Flavio Keidi Miyazawa
+IC,MC668,MC668 A,Segunda,14:00,16:00,CC51,Zanoni Dias
+IC,MC714,MC714 A,Terça,21:00,23:00,CB11,Carlos Alberto Astudillo Trujillo
+IC,MC732,MC732 A,Segunda,16:00,18:00,PB15,Rodolfo Jardim De Azevedo
+IC,MC750,MC750 A,Terça,21:00,23:00,CB08,Emanuel Felipe Duarte
+IC,MC821,MC821 A,Sexta,14:00,18:00,CC03,Fabio Luiz Usberti
+IC,MC826,MC826 A,Segunda,14:00,16:00,CC53,Marcos Medeiros Raimundo
+IC,MC832,MC832 A,Terça,14:00,16:00,CB08,Edmundo Roberto Mauro Madeira
+IC,MC833,MC833 A,Terça,19:00,21:00,CC00,Nelson Luis Saldanha Da Fonseca
+IC,MC833,MC833 B,Terça,19:00,21:00,CC03,Nelson Luis Saldanha Da Fonseca
+IC,MC853,MC853 A,Sexta,19:00,23:00,CC03,Islene Calciolari Garcia
+IC,MC855,MC855 A,Sexta,19:00,23:00,CC04,Paulo Licio De Geus
+IC,MC859,MC859 A,Sexta,14:00,18:00,CC04,Ruben Interian Kovaliova
+IC,MC878,MC878 A,Terça,19:00,21:00,CC51,Christiane Neme Campos
+IC,MC886,MC886 A,Segunda,21:00,23:00,CB09,Marcos Medeiros Raimundo
+IC,MC886,MC886 B,Terça,14:00,16:00,CC51,Sandra Eliza Fontes De Avila
+IC,MC908,MC908 A,Terça,19:00,21:00,CC52,Joao Meidanis
+IC,MC908,MC908 B,Terça,14:00,16:00,CC53,Ruben Interian Kovaliova
+IC,MC921,MC921 A,Segunda,21:00,23:00,PB17,Herve Cedric Yviquel
+IC,MC921,MC921 B,Segunda,21:00,23:00,PB17,Herve Cedric Yviquel
+IC,MC934,MC934 A,Quarta,14:00,16:00,CC53,Marcos Medeiros Raimundo
+IC,MC938,MC938 A,Terça,19:00,21:00,CC85,Julio Cesar Lopez Hernandez
+IC,MC959,MC959 A,Segunda,16:00,18:00,CC51,Marcelo Da Silva Reis
+IC,MC960,MC960 A,Segunda,19:00,21:00,CC53,Herve Cedric Yviquel
+IC,MC963,MC963 A,Terça,14:00,16:00,CC52,Juliana Freitag Borin
+IC,MC973,MC973 A,Segunda,19:00,21:00,CC51,Rodolfo Jardim De Azevedo
+IC,MC001,MC001 A,Segunda,14:00,18:00,PB13,Sandra Eliza Fontes De Avila
+IC,MC009,MC009 A,Segunda,21:00,22:00,PB13,Andre Santanche
+IC,MC039,MC039 A,Sexta,14:00,15:00,CC85,Edmundo Roberto Mauro Madeira
+IC,MC102,MC102 A,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 A,Quinta,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 A,Sexta,10:00,12:00,SI05,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 B,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 B,Quinta,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 B,Sexta,10:00,12:00,SI10,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 C,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 C,Terça,16:00,18:00,SI03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 C,Quinta,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 D,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 D,Terça,16:00,18:00,SI05,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 D,Quinta,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 E,Terça,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 E,Quinta,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 E,Quinta,14:00,16:00,SI03,Helio Pedrini
+IC,MC102,MC102 F,Terça,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 F,Quinta,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 F,Quinta,14:00,16:00,SI05,Helio Pedrini
+IC,MC102,MC102 G,Terça,19:00,21:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 G,Terça,21:00,23:00,SI08,Roberto Massi de Oliveira
+IC,MC102,MC102 G,Sexta,21:00,23:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 H,Terça,19:00,21:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 H,Terça,21:00,23:00,SI10,Roberto Massi de Oliveira
+IC,MC102,MC102 H,Sexta,21:00,23:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 I,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 I,Terça,14:00,16:00,SI08,Judy Carolina Guevara Amaya
+IC,MC102,MC102 I,Quinta,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 J,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 J,Terça,14:00,16:00,SI05,Judy Carolina Guevara Amaya
+IC,MC102,MC102 J,Quinta,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 K,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 K,Quarta,14:00,16:00,SI03,Judy Carolina Guevara Amaya
+IC,MC102,MC102 K,Quinta,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 L,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 L,Quarta,14:00,16:00,SI05,Judy Carolina Guevara Amaya
+IC,MC102,MC102 L,Quinta,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 M,Terça,10:00,12:00,SI05,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 M,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 M,Quinta,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 N,Terça,10:00,12:00,SI03,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 N,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 N,Quinta,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 O,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 O,Quinta,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 O,Sexta,14:00,16:00,SI03,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 P,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 P,Quinta,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 P,Sexta,14:00,16:00,SI05,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 R,Terça,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 R,Quinta,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 R,Quinta,16:00,18:00,SI03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 S,Terça,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 S,Quinta,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 S,Quinta,16:00,18:00,SI05,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 X,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC102,MC102 X,Quinta,19:00,21:00,CB09,Ricardo Dahab
+IC,MC102,MC102 X,Sexta,21:00,23:00,SI10,Ricardo Dahab
+IC,MC102,MC102 Y,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Y,Quinta,19:00,21:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Y,Sexta,21:00,23:00,SI08,Ricardo Dahab
+IC,MC102,MC102 Z,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Z,Quinta,19:00,21:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Z,Sexta,21:00,23:00,SI05,Ricardo Dahab
+IC,MC202,MC202 A,Segunda,14:00,16:00,CC00,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 A,Terça,10:00,12:00,CB06,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 A,Quinta,10:00,12:00,CB06,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 B,Segunda,16:00,18:00,CC00,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 B,Terça,10:00,12:00,CB06,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 B,Quinta,10:00,12:00,CB06,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 E,Terça,21:00,23:00,CC00,Lehilton Lelis Chaves Pedrosa
+IC,MC202,MC202 E,Quarta,19:00,21:00,CB13,Lehilton Lelis Chaves Pedrosa
+IC,MC202,MC202 E,Quinta,19:00,21:00,CB13,Lehilton Lelis Chaves Pedrosa
+IC,MC202,MC202 G,Terça,16:00,18:00,CB11,Guilherme Pimentel Telles
+IC,MC202,MC202 G,Quarta,16:00,18:00,SI10,Guilherme Pimentel Telles
+IC,MC202,MC202 G,Quinta,16:00,18:00,CB15,Guilherme Pimentel Telles
+IC,MC202,MC202 H,Terça,16:00,18:00,CB11,Guilherme Pimentel Telles
+IC,MC202,MC202 H,Quarta,16:00,18:00,SI05,Guilherme Pimentel Telles
+IC,MC202,MC202 H,Quinta,16:00,18:00,CB15,Guilherme Pimentel Telles
+IC,MC322,MC322 A,Segunda,21:00,23:00,CC00,Marcelo Da Silva Reis
+IC,MC322,MC322 A,Quarta,19:00,21:00,CB12,Marcelo Da Silva Reis
+IC,MC346,MC346 A,Segunda,16:00,18:00,CC53,Jacques Wainer
+IC,MC346,MC346 A,Quarta,16:00,18:00,CC53,Jacques Wainer
+IC,MC358,MC358 A,Terça,10:00,12:00,CB18,Pedro Jussieu De Rezende
+IC,MC358,MC358 A,Quinta,10:00,12:00,CB18,Pedro Jussieu De Rezende
+IC,MC358,MC358 B,Segunda,19:00,21:00,CB04,Hilder Vitor Lima Pereira
+IC,MC358,MC358 B,Quarta,21:00,23:00,CB04,Hilder Vitor Lima Pereira
+IC,MC404,MC404 A,Segunda,14:00,16:00,CB03,Edson Borin
+IC,MC404,MC404 A,Quarta,14:00,16:00,CC00,Edson Borin
+IC,MC404,MC404 B,Segunda,14:00,16:00,CB03,Edson Borin
+IC,MC404,MC404 B,Quarta,16:00,18:00,CC00,Edson Borin
+IC,MC426,MC426 A,Terça,08:00,10:00,CC03,Breno Bernard Nicolau De Franca
+IC,MC426,MC426 A,Quinta,08:00,10:00,CC03,Breno Bernard Nicolau De Franca
+IC,MC458,MC458 A,Segunda,19:00,21:00,PB16,Orlando Lee
+IC,MC458,MC458 A,Quarta,21:00,23:00,PB16,Orlando Lee
+IC,MC504,MC504 A,Segunda,19:00,21:00,CB10,Paulo Licio De Geus
+IC,MC504,MC504 A,Quarta,21:00,23:00,CB10,Paulo Licio De Geus
+IC,MC536,MC536 A,Terça,21:00,23:00,CC53,Julio Cesar Dos Reis
+IC,MC536,MC536 A,Sexta,19:00,21:00,CC53,Julio Cesar Dos Reis
+IC,MC536,MC536 A,Sexta,21:00,23:00,CC00,Julio Cesar Dos Reis
+IC,MC558,MC558 A,Segunda,14:00,16:00,PB14,Santiago Valdes Ravelo
+IC,MC558,MC558 A,Quarta,14:00,16:00,PB14,Santiago Valdes Ravelo
+IC,MC602,MC602 A,Terça,19:00,21:00,CB16,Ricardo Pannain
+IC,MC602,MC602 A,Quinta,21:00,23:00,PB13,Ricardo Pannain
+IC,MC621,MC621 A,Sexta,14:00,18:00,CC00,Fabio Luiz Usberti
+IC,MC646,MC646 A,Segunda,16:00,18:00,CB11,Bruno Barbieri De Pontes Cafeo
+IC,MC646,MC646 A,Quarta,16:00,18:00,CB11,Bruno Barbieri De Pontes Cafeo
+IC,MC656,MC656 A,Terça,08:00,10:00,CB07,Breno Bernard Nicolau De Franca
+IC,MC656,MC656 A,Quinta,08:00,10:00,CB07,Breno Bernard Nicolau De Franca
+IC,MC658,MC658 A,Segunda,14:00,16:00,CB11,Flavio Keidi Miyazawa
+IC,MC658,MC658 A,Quarta,14:00,16:00,CB11,Flavio Keidi Miyazawa
+IC,MC668,MC668 A,Segunda,14:00,16:00,CC51,Zanoni Dias
+IC,MC668,MC668 A,Quarta,14:00,16:00,CC51,Zanoni Dias
+IC,MC714,MC714 A,Terça,21:00,23:00,CB11,Carlos Alberto Astudillo Trujillo
+IC,MC714,MC714 A,Quinta,19:00,21:00,CB11,Carlos Alberto Astudillo Trujillo
+IC,MC732,MC732 A,Segunda,16:00,18:00,PB15,Rodolfo Jardim De Azevedo
+IC,MC732,MC732 A,Quarta,16:00,18:00,PB15,Rodolfo Jardim De Azevedo
+IC,MC750,MC750 A,Terça,21:00,23:00,CB08,Emanuel Felipe Duarte
+IC,MC750,MC750 A,Quinta,19:00,21:00,CB08,Emanuel Felipe Duarte
+IC,MC821,MC821 A,Sexta,14:00,18:00,CC03,Fabio Luiz Usberti
+IC,MC826,MC826 A,Segunda,14:00,16:00,CC53,Marcos Medeiros Raimundo
+IC,MC832,MC832 A,Terça,14:00,16:00,CB08,Edmundo Roberto Mauro Madeira
+IC,MC832,MC832 A,Quinta,14:00,16:00,CB08,Edmundo Roberto Mauro Madeira
+IC,MC833,MC833 A,Terça,19:00,21:00,CC00,Nelson Luis Saldanha Da Fonseca
+IC,MC833,MC833 B,Terça,19:00,21:00,CC03,Nelson Luis Saldanha Da Fonseca
+IC,MC853,MC853 A,Sexta,19:00,23:00,CC03,Islene Calciolari Garcia
+IC,MC855,MC855 A,Sexta,19:00,23:00,CC04,Paulo Licio De Geus
+IC,MC859,MC859 A,Sexta,14:00,18:00,CC04,Ruben Interian Kovaliova
+IC,MC878,MC878 A,Terça,19:00,21:00,CC51,Christiane Neme Campos
+IC,MC878,MC878 A,Quinta,19:00,21:00,CC51,Christiane Neme Campos
+IC,MC886,MC886 A,Segunda,21:00,23:00,CB09,Marcos Medeiros Raimundo
+IC,MC886,MC886 A,Quarta,19:00,21:00,CB09,Marcos Medeiros Raimundo
+IC,MC886,MC886 B,Terça,14:00,16:00,CC51,Sandra Eliza Fontes De Avila
+IC,MC886,MC886 B,Quinta,14:00,16:00,CC51,Sandra Eliza Fontes De Avila
+IC,MC908,MC908 A,Terça,19:00,21:00,CC52,Joao Meidanis
+IC,MC908,MC908 A,Quinta,21:00,23:00,CC52,Joao Meidanis
+IC,MC908,MC908 B,Terça,14:00,16:00,CC53,Ruben Interian Kovaliova
+IC,MC908,MC908 B,Quinta,14:00,16:00,CC53,Ruben Interian Kovaliova
+IC,MC921,MC921 A,Segunda,21:00,23:00,PB17,Herve Cedric Yviquel
+IC,MC921,MC921 A,Quarta,19:00,21:00,PB17,Herve Cedric Yviquel
+IC,MC921,MC921 A,Quarta,21:00,23:00,CC00,Herve Cedric Yviquel
+IC,MC921,MC921 B,Segunda,21:00,23:00,PB17,Herve Cedric Yviquel
+IC,MC921,MC921 B,Quarta,19:00,21:00,PB17,Herve Cedric Yviquel
+IC,MC921,MC921 B,Quinta,21:00,23:00,CC00,Herve Cedric Yviquel
+IC,MC934,MC934 A,Quarta,14:00,16:00,CC53,Marcos Medeiros Raimundo
+IC,MC938,MC938 A,Terça,19:00,21:00,CC85,Julio Cesar Lopez Hernandez
+IC,MC938,MC938 A,Quinta,19:00,21:00,CC85,Julio Cesar Lopez Hernandez
+IC,MC959,MC959 A,Segunda,16:00,18:00,CC51,Marcelo Da Silva Reis
+IC,MC959,MC959 A,Quarta,16:00,18:00,CC51,Marcelo Da Silva Reis
+IC,MC960,MC960 A,Segunda,19:00,21:00,CC53,Herve Cedric Yviquel
+IC,MC960,MC960 A,Quinta,19:00,21:00,CC52,Herve Cedric Yviquel
+IC,MC963,MC963 A,Terça,14:00,16:00,CC52,Juliana Freitag Borin
+IC,MC963,MC963 A,Quinta,14:00,16:00,CC52,Juliana Freitag Borin
+IC,MC973,MC973 A,Segunda,19:00,21:00,CC51,Rodolfo Jardim De Azevedo
+IC,MC973,MC973 A,Quarta,19:00,21:00,CC51,Rodolfo Jardim De Azevedo
+IC,MC001,MC001 A,Segunda,14:00,18:00,PB13,Sandra Eliza Fontes De Avila
+IC,MC009,MC009 A,Segunda,21:00,22:00,PB13,Andre Santanche
+IC,MC039,MC039 A,Sexta,14:00,15:00,CC85,Edmundo Roberto Mauro Madeira
+IC,MC102,MC102 A,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 A,Quinta,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 A,Sexta,10:00,12:00,SI05,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 B,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 B,Quinta,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 B,Sexta,10:00,12:00,SI10,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 C,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 C,Terça,16:00,18:00,SI03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 C,Quinta,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 D,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 D,Terça,16:00,18:00,SI05,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 D,Quinta,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 E,Terça,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 E,Quinta,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 E,Quinta,14:00,16:00,SI03,Helio Pedrini
+IC,MC102,MC102 F,Terça,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 F,Quinta,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 F,Quinta,14:00,16:00,SI05,Helio Pedrini
+IC,MC102,MC102 G,Terça,19:00,21:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 G,Terça,21:00,23:00,SI08,Roberto Massi de Oliveira
+IC,MC102,MC102 G,Sexta,21:00,23:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 H,Terça,19:00,21:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 H,Terça,21:00,23:00,SI10,Roberto Massi de Oliveira
+IC,MC102,MC102 H,Sexta,21:00,23:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 I,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 I,Terça,14:00,16:00,SI08,Judy Carolina Guevara Amaya
+IC,MC102,MC102 I,Quinta,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 J,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 J,Terça,14:00,16:00,SI05,Judy Carolina Guevara Amaya
+IC,MC102,MC102 J,Quinta,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 K,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 K,Quarta,14:00,16:00,SI03,Judy Carolina Guevara Amaya
+IC,MC102,MC102 K,Quinta,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 L,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 L,Quarta,14:00,16:00,SI05,Judy Carolina Guevara Amaya
+IC,MC102,MC102 L,Quinta,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 M,Terça,10:00,12:00,SI05,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 M,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 M,Quinta,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 N,Terça,10:00,12:00,SI03,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 N,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 N,Quinta,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 O,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 O,Quinta,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 O,Sexta,14:00,16:00,SI03,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 P,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 P,Quinta,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 P,Sexta,14:00,16:00,SI05,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 R,Terça,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 R,Quinta,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 R,Quinta,16:00,18:00,SI03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 S,Terça,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 S,Quinta,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 S,Quinta,16:00,18:00,SI05,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 X,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC102,MC102 X,Quinta,19:00,21:00,CB09,Ricardo Dahab
+IC,MC102,MC102 X,Sexta,21:00,23:00,SI10,Ricardo Dahab
+IC,MC102,MC102 Y,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Y,Quinta,19:00,21:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Y,Sexta,21:00,23:00,SI08,Ricardo Dahab
+IC,MC102,MC102 Z,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Z,Quinta,19:00,21:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Z,Sexta,21:00,23:00,SI05,Ricardo Dahab
+IC,MC202,MC202 A,Segunda,14:00,16:00,CC00,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 A,Terça,10:00,12:00,CB06,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 A,Quinta,10:00,12:00,CB06,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 B,Segunda,16:00,18:00,CC00,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 B,Terça,10:00,12:00,CB06,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 B,Quinta,10:00,12:00,CB06,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 E,Terça,21:00,23:00,CC00,Lehilton Lelis Chaves Pedrosa
+IC,MC202,MC202 E,Quarta,19:00,21:00,CB13,Lehilton Lelis Chaves Pedrosa
+IC,MC202,MC202 E,Quinta,19:00,21:00,CB13,Lehilton Lelis Chaves Pedrosa
+IC,MC202,MC202 G,Terça,16:00,18:00,CB11,Guilherme Pimentel Telles
+IC,MC202,MC202 G,Quarta,16:00,18:00,SI10,Guilherme Pimentel Telles
+IC,MC202,MC202 G,Quinta,16:00,18:00,CB15,Guilherme Pimentel Telles
+IC,MC202,MC202 H,Terça,16:00,18:00,CB11,Guilherme Pimentel Telles
+IC,MC202,MC202 H,Quarta,16:00,18:00,SI05,Guilherme Pimentel Telles
+IC,MC202,MC202 H,Quinta,16:00,18:00,CB15,Guilherme Pimentel Telles
+IC,MC322,MC322 A,Segunda,21:00,23:00,CC00,Marcelo Da Silva Reis
+IC,MC322,MC322 A,Quarta,19:00,21:00,CB12,Marcelo Da Silva Reis
+IC,MC346,MC346 A,Segunda,16:00,18:00,CC53,Jacques Wainer
+IC,MC346,MC346 A,Quarta,16:00,18:00,CC53,Jacques Wainer
+IC,MC358,MC358 A,Terça,10:00,12:00,CB18,Pedro Jussieu De Rezende
+IC,MC358,MC358 A,Quinta,10:00,12:00,CB18,Pedro Jussieu De Rezende
+IC,MC358,MC358 B,Segunda,19:00,21:00,CB04,Hilder Vitor Lima Pereira
+IC,MC358,MC358 B,Quarta,21:00,23:00,CB04,Hilder Vitor Lima Pereira
+IC,MC404,MC404 A,Segunda,14:00,16:00,CB03,Edson Borin
+IC,MC404,MC404 A,Quarta,14:00,16:00,CC00,Edson Borin
+IC,MC404,MC404 B,Segunda,14:00,16:00,CB03,Edson Borin
+IC,MC404,MC404 B,Quarta,16:00,18:00,CC00,Edson Borin
+IC,MC426,MC426 A,Terça,08:00,10:00,CC03,Breno Bernard Nicolau De Franca
+IC,MC426,MC426 A,Quinta,08:00,10:00,CC03,Breno Bernard Nicolau De Franca
+IC,MC458,MC458 A,Segunda,19:00,21:00,PB16,Orlando Lee
+IC,MC458,MC458 A,Quarta,21:00,23:00,PB16,Orlando Lee
+IC,MC504,MC504 A,Segunda,19:00,21:00,CB10,Paulo Licio De Geus
+IC,MC504,MC504 A,Quarta,21:00,23:00,CB10,Paulo Licio De Geus
+IC,MC536,MC536 A,Terça,21:00,23:00,CC53,Julio Cesar Dos Reis
+IC,MC536,MC536 A,Sexta,19:00,21:00,CC53,Julio Cesar Dos Reis
+IC,MC536,MC536 A,Sexta,21:00,23:00,CC00,Julio Cesar Dos Reis
+IC,MC558,MC558 A,Segunda,14:00,16:00,PB14,Santiago Valdes Ravelo
+IC,MC558,MC558 A,Quarta,14:00,16:00,PB14,Santiago Valdes Ravelo
+IC,MC602,MC602 A,Terça,19:00,21:00,CB16,Ricardo Pannain
+IC,MC602,MC602 A,Quinta,21:00,23:00,PB13,Ricardo Pannain
+IC,MC621,MC621 A,Sexta,14:00,18:00,CC00,Fabio Luiz Usberti
+IC,MC646,MC646 A,Segunda,16:00,18:00,CB11,Bruno Barbieri De Pontes Cafeo
+IC,MC646,MC646 A,Quarta,16:00,18:00,CB11,Bruno Barbieri De Pontes Cafeo
+IC,MC656,MC656 A,Terça,08:00,10:00,CB07,Breno Bernard Nicolau De Franca
+IC,MC656,MC656 A,Quinta,08:00,10:00,CB07,Breno Bernard Nicolau De Franca
+IC,MC658,MC658 A,Segunda,14:00,16:00,CB11,Flavio Keidi Miyazawa
+IC,MC658,MC658 A,Quarta,14:00,16:00,CB11,Flavio Keidi Miyazawa
+IC,MC668,MC668 A,Segunda,14:00,16:00,CC51,Zanoni Dias
+IC,MC668,MC668 A,Quarta,14:00,16:00,CC51,Zanoni Dias
+IC,MC714,MC714 A,Terça,21:00,23:00,CB11,Carlos Alberto Astudillo Trujillo
+IC,MC714,MC714 A,Quinta,19:00,21:00,CB11,Carlos Alberto Astudillo Trujillo
+IC,MC732,MC732 A,Segunda,16:00,18:00,PB15,Rodolfo Jardim De Azevedo
+IC,MC732,MC732 A,Quarta,16:00,18:00,PB15,Rodolfo Jardim De Azevedo
+IC,MC750,MC750 A,Terça,21:00,23:00,CB08,Emanuel Felipe Duarte
+IC,MC750,MC750 A,Quinta,19:00,21:00,CB08,Emanuel Felipe Duarte
+IC,MC821,MC821 A,Sexta,14:00,18:00,CC03,Fabio Luiz Usberti
+IC,MC826,MC826 A,Segunda,14:00,16:00,CC53,Marcos Medeiros Raimundo
+IC,MC832,MC832 A,Terça,14:00,16:00,CB08,Edmundo Roberto Mauro Madeira
+IC,MC832,MC832 A,Quinta,14:00,16:00,CB08,Edmundo Roberto Mauro Madeira
+IC,MC833,MC833 A,Terça,19:00,21:00,CC00,Nelson Luis Saldanha Da Fonseca
+IC,MC833,MC833 B,Terça,19:00,21:00,CC03,Nelson Luis Saldanha Da Fonseca
+IC,MC853,MC853 A,Sexta,19:00,23:00,CC03,Islene Calciolari Garcia
+IC,MC855,MC855 A,Sexta,19:00,23:00,CC04,Paulo Licio De Geus
+IC,MC859,MC859 A,Sexta,14:00,18:00,CC04,Ruben Interian Kovaliova
+IC,MC878,MC878 A,Terça,19:00,21:00,CC51,Christiane Neme Campos
+IC,MC878,MC878 A,Quinta,19:00,21:00,CC51,Christiane Neme Campos
+IC,MC886,MC886 A,Segunda,21:00,23:00,CB09,Marcos Medeiros Raimundo
+IC,MC886,MC886 A,Quarta,19:00,21:00,CB09,Marcos Medeiros Raimundo
+IC,MC886,MC886 B,Terça,14:00,16:00,CC51,Sandra Eliza Fontes De Avila
+IC,MC886,MC886 B,Quinta,14:00,16:00,CC51,Sandra Eliza Fontes De Avila
+IC,MC908,MC908 A,Terça,19:00,21:00,CC52,Joao Meidanis
+IC,MC908,MC908 A,Quinta,21:00,23:00,CC52,Joao Meidanis
+IC,MC908,MC908 B,Terça,14:00,16:00,CC53,Ruben Interian Kovaliova
+IC,MC908,MC908 B,Quinta,14:00,16:00,CC53,Ruben Interian Kovaliova
+IC,MC921,MC921 A,Segunda,21:00,23:00,PB17,Herve Cedric Yviquel
+IC,MC921,MC921 A,Quarta,19:00,21:00,PB17,Herve Cedric Yviquel
+IC,MC921,MC921 A,Quarta,21:00,23:00,CC00,Herve Cedric Yviquel
+IC,MC921,MC921 B,Segunda,21:00,23:00,PB17,Herve Cedric Yviquel
+IC,MC921,MC921 B,Quarta,19:00,21:00,PB17,Herve Cedric Yviquel
+IC,MC921,MC921 B,Quinta,21:00,23:00,CC00,Herve Cedric Yviquel
+IC,MC934,MC934 A,Quarta,14:00,16:00,CC53,Marcos Medeiros Raimundo
+IC,MC938,MC938 A,Terça,19:00,21:00,CC85,Julio Cesar Lopez Hernandez
+IC,MC938,MC938 A,Quinta,19:00,21:00,CC85,Julio Cesar Lopez Hernandez
+IC,MC959,MC959 A,Segunda,16:00,18:00,CC51,Marcelo Da Silva Reis
+IC,MC959,MC959 A,Quarta,16:00,18:00,CC51,Marcelo Da Silva Reis
+IC,MC960,MC960 A,Segunda,19:00,21:00,CC53,Herve Cedric Yviquel
+IC,MC960,MC960 A,Quinta,19:00,21:00,CC52,Herve Cedric Yviquel
+IC,MC963,MC963 A,Terça,14:00,16:00,CC52,Juliana Freitag Borin
+IC,MC963,MC963 A,Quinta,14:00,16:00,CC52,Juliana Freitag Borin
+IC,MC973,MC973 A,Segunda,19:00,21:00,CC51,Rodolfo Jardim De Azevedo
+IC,MC973,MC973 A,Quarta,19:00,21:00,CC51,Rodolfo Jardim De Azevedo
+IC,MC001,MC001 A,Segunda,14:00,18:00,PB13,Sandra Eliza Fontes De Avila
+IC,MC009,MC009 A,Segunda,21:00,22:00,PB13,Andre Santanche
+IC,MC039,MC039 A,Sexta,14:00,15:00,CC85,Edmundo Roberto Mauro Madeira
+IC,MC102,MC102 A,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 B,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 C,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 D,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 E,Terça,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 F,Terça,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 G,Terça,19:00,21:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 H,Terça,19:00,21:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 I,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 J,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 K,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 L,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 M,Terça,10:00,12:00,SI05,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 N,Terça,10:00,12:00,SI03,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 O,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 P,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 R,Terça,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 S,Terça,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 X,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Y,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Z,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC202,MC202 A,Segunda,14:00,16:00,CC00,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 B,Segunda,16:00,18:00,CC00,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 E,Terça,21:00,23:00,CC00,Lehilton Lelis Chaves Pedrosa
+IC,MC202,MC202 G,Terça,16:00,18:00,CB11,Guilherme Pimentel Telles
+IC,MC202,MC202 H,Terça,16:00,18:00,CB11,Guilherme Pimentel Telles
+IC,MC322,MC322 A,Segunda,21:00,23:00,CC00,Marcelo Da Silva Reis
+IC,MC346,MC346 A,Segunda,16:00,18:00,CC53,Jacques Wainer
+IC,MC358,MC358 A,Terça,10:00,12:00,CB18,Pedro Jussieu De Rezende
+IC,MC358,MC358 B,Segunda,19:00,21:00,CB04,Hilder Vitor Lima Pereira
+IC,MC404,MC404 A,Segunda,14:00,16:00,CB03,Edson Borin
+IC,MC404,MC404 B,Segunda,14:00,16:00,CB03,Edson Borin
+IC,MC426,MC426 A,Terça,08:00,10:00,CC03,Breno Bernard Nicolau De Franca
+IC,MC458,MC458 A,Segunda,19:00,21:00,PB16,Orlando Lee
+IC,MC504,MC504 A,Segunda,19:00,21:00,CB10,Paulo Licio De Geus
+IC,MC536,MC536 A,Terça,21:00,23:00,CC53,Julio Cesar Dos Reis
+IC,MC558,MC558 A,Segunda,14:00,16:00,PB14,Santiago Valdes Ravelo
+IC,MC602,MC602 A,Terça,19:00,21:00,CB16,Ricardo Pannain
+IC,MC621,MC621 A,Sexta,14:00,18:00,CC00,Fabio Luiz Usberti
+IC,MC646,MC646 A,Segunda,16:00,18:00,CB11,Bruno Barbieri De Pontes Cafeo
+IC,MC656,MC656 A,Terça,08:00,10:00,CB07,Breno Bernard Nicolau De Franca
+IC,MC658,MC658 A,Segunda,14:00,16:00,CB11,Flavio Keidi Miyazawa
+IC,MC668,MC668 A,Segunda,14:00,16:00,CC51,Zanoni Dias
+IC,MC714,MC714 A,Terça,21:00,23:00,CB11,Carlos Alberto Astudillo Trujillo
+IC,MC732,MC732 A,Segunda,16:00,18:00,PB15,Rodolfo Jardim De Azevedo
+IC,MC750,MC750 A,Terça,21:00,23:00,CB08,Emanuel Felipe Duarte
+IC,MC821,MC821 A,Sexta,14:00,18:00,CC03,Fabio Luiz Usberti
+IC,MC826,MC826 A,Segunda,14:00,16:00,CC53,Marcos Medeiros Raimundo
+IC,MC832,MC832 A,Terça,14:00,16:00,CB08,Edmundo Roberto Mauro Madeira
+IC,MC833,MC833 A,Terça,19:00,21:00,CC00,Nelson Luis Saldanha Da Fonseca
+IC,MC833,MC833 B,Terça,19:00,21:00,CC03,Nelson Luis Saldanha Da Fonseca
+IC,MC853,MC853 A,Sexta,19:00,23:00,CC03,Islene Calciolari Garcia
+IC,MC855,MC855 A,Sexta,19:00,23:00,CC04,Paulo Licio De Geus
+IC,MC859,MC859 A,Sexta,14:00,18:00,CC04,Ruben Interian Kovaliova
+IC,MC878,MC878 A,Terça,19:00,21:00,CC51,Christiane Neme Campos
+IC,MC886,MC886 A,Segunda,21:00,23:00,CB09,Marcos Medeiros Raimundo
+IC,MC886,MC886 B,Terça,14:00,16:00,CC51,Sandra Eliza Fontes De Avila
+IC,MC908,MC908 A,Terça,19:00,21:00,CC52,Joao Meidanis
+IC,MC908,MC908 B,Terça,14:00,16:00,CC53,Ruben Interian Kovaliova
+IC,MC921,MC921 A,Segunda,21:00,23:00,PB17,Herve Cedric Yviquel
+IC,MC921,MC921 B,Segunda,21:00,23:00,PB17,Herve Cedric Yviquel
+IC,MC934,MC934 A,Quarta,14:00,16:00,CC53,Marcos Medeiros Raimundo
+IC,MC938,MC938 A,Terça,19:00,21:00,CC85,Julio Cesar Lopez Hernandez
+IC,MC959,MC959 A,Segunda,16:00,18:00,CC51,Marcelo Da Silva Reis
+IC,MC960,MC960 A,Segunda,19:00,21:00,CC53,Herve Cedric Yviquel
+IC,MC963,MC963 A,Terça,14:00,16:00,CC52,Juliana Freitag Borin
+IC,MC973,MC973 A,Segunda,19:00,21:00,CC51,Rodolfo Jardim De Azevedo
+IC,MC001,MC001 A,Segunda,14:00,18:00,PB13,Sandra Eliza Fontes De Avila
+IC,MC009,MC009 A,Segunda,21:00,22:00,PB13,Andre Santanche
+IC,MC039,MC039 A,Sexta,14:00,15:00,CC85,Edmundo Roberto Mauro Madeira
+IC,MC102,MC102 A,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 A,Quinta,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 A,Sexta,10:00,12:00,SI05,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 B,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 B,Quinta,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 B,Sexta,10:00,12:00,SI10,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 C,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 C,Terça,16:00,18:00,SI03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 C,Quinta,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 D,Terça,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 D,Terça,16:00,18:00,SI05,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 D,Quinta,10:00,12:00,CB03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 E,Terça,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 E,Quinta,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 E,Quinta,14:00,16:00,SI03,Helio Pedrini
+IC,MC102,MC102 F,Terça,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 F,Quinta,10:00,12:00,CB14,Helio Pedrini
+IC,MC102,MC102 F,Quinta,14:00,16:00,SI05,Helio Pedrini
+IC,MC102,MC102 G,Terça,19:00,21:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 G,Terça,21:00,23:00,SI08,Roberto Massi de Oliveira
+IC,MC102,MC102 G,Sexta,21:00,23:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 H,Terça,19:00,21:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 H,Terça,21:00,23:00,SI10,Roberto Massi de Oliveira
+IC,MC102,MC102 H,Sexta,21:00,23:00,PB06,Roberto Massi de Oliveira
+IC,MC102,MC102 I,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 I,Terça,14:00,16:00,SI08,Judy Carolina Guevara Amaya
+IC,MC102,MC102 I,Quinta,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 J,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 J,Terça,14:00,16:00,SI05,Judy Carolina Guevara Amaya
+IC,MC102,MC102 J,Quinta,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 K,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 K,Quarta,14:00,16:00,SI03,Judy Carolina Guevara Amaya
+IC,MC102,MC102 K,Quinta,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 L,Terça,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 L,Quarta,14:00,16:00,SI05,Judy Carolina Guevara Amaya
+IC,MC102,MC102 L,Quinta,10:00,12:00,CB02,Judy Carolina Guevara Amaya
+IC,MC102,MC102 M,Terça,10:00,12:00,SI05,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 M,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 M,Quinta,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 N,Terça,10:00,12:00,SI03,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 N,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 N,Quinta,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 O,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 O,Quinta,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 O,Sexta,14:00,16:00,SI03,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 P,Terça,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 P,Quinta,14:00,16:00,CB01,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 P,Sexta,14:00,16:00,SI05,Julio Cesar Lopez Hernandez
+IC,MC102,MC102 R,Terça,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 R,Quinta,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 R,Quinta,16:00,18:00,SI03,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 S,Terça,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 S,Quinta,14:00,16:00,CB11,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 S,Quinta,16:00,18:00,SI05,Lehilton Lelis Chaves Pedrosa
+IC,MC102,MC102 X,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC102,MC102 X,Quinta,19:00,21:00,CB09,Ricardo Dahab
+IC,MC102,MC102 X,Sexta,21:00,23:00,SI10,Ricardo Dahab
+IC,MC102,MC102 Y,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Y,Quinta,19:00,21:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Y,Sexta,21:00,23:00,SI08,Ricardo Dahab
+IC,MC102,MC102 Z,Terça,21:00,23:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Z,Quinta,19:00,21:00,CB09,Ricardo Dahab
+IC,MC102,MC102 Z,Sexta,21:00,23:00,SI05,Ricardo Dahab
+IC,MC202,MC202 A,Segunda,14:00,16:00,CC00,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 A,Terça,10:00,12:00,CB06,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 A,Quinta,10:00,12:00,CB06,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 B,Segunda,16:00,18:00,CC00,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 B,Terça,10:00,12:00,CB06,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 B,Quinta,10:00,12:00,CB06,Rafael Crivellari Saliba Schouery
+IC,MC202,MC202 E,Terça,21:00,23:00,CC00,Lehilton Lelis Chaves Pedrosa
+IC,MC202,MC202 E,Quarta,19:00,21:00,CB13,Lehilton Lelis Chaves Pedrosa
+IC,MC202,MC202 E,Quinta,19:00,21:00,CB13,Lehilton Lelis Chaves Pedrosa
+IC,MC202,MC202 G,Terça,16:00,18:00,CB11,Guilherme Pimentel Telles
+IC,MC202,MC202 G,Quarta,16:00,18:00,SI10,Guilherme Pimentel Telles
+IC,MC202,MC202 G,Quinta,16:00,18:00,CB15,Guilherme Pimentel Telles
+IC,MC202,MC202 H,Terça,16:00,18:00,CB11,Guilherme Pimentel Telles
+IC,MC202,MC202 H,Quarta,16:00,18:00,SI05,Guilherme Pimentel Telles
+IC,MC202,MC202 H,Quinta,16:00,18:00,CB15,Guilherme Pimentel Telles
+IC,MC322,MC322 A,Segunda,21:00,23:00,CC00,Marcelo Da Silva Reis
+IC,MC322,MC322 A,Quarta,19:00,21:00,CB12,Marcelo Da Silva Reis
+IC,MC346,MC346 A,Segunda,16:00,18:00,CC53,Jacques Wainer
+IC,MC346,MC346 A,Quarta,16:00,18:00,CC53,Jacques Wainer
+IC,MC358,MC358 A,Terça,10:00,12:00,CB18,Pedro Jussieu De Rezende
+IC,MC358,MC358 A,Quinta,10:00,12:00,CB18,Pedro Jussieu De Rezende
+IC,MC358,MC358 B,Segunda,19:00,21:00,CB04,Hilder Vitor Lima Pereira
+IC,MC358,MC358 B,Quarta,21:00,23:00,CB04,Hilder Vitor Lima Pereira
+IC,MC404,MC404 A,Segunda,14:00,16:00,CB03,Edson Borin
+IC,MC404,MC404 A,Quarta,14:00,16:00,CC00,Edson Borin
+IC,MC404,MC404 B,Segunda,14:00,16:00,CB03,Edson Borin
+IC,MC404,MC404 B,Quarta,16:00,18:00,CC00,Edson Borin
+IC,MC426,MC426 A,Terça,08:00,10:00,CC03,Breno Bernard Nicolau De Franca
+IC,MC426,MC426 A,Quinta,08:00,10:00,CC03,Breno Bernard Nicolau De Franca
+IC,MC458,MC458 A,Segunda,19:00,21:00,PB16,Orlando Lee
+IC,MC458,MC458 A,Quarta,21:00,23:00,PB16,Orlando Lee
+IC,MC504,MC504 A,Segunda,19:00,21:00,CB10,Paulo Licio De Geus
+IC,MC504,MC504 A,Quarta,21:00,23:00,CB10,Paulo Licio De Geus
+IC,MC536,MC536 A,Terça,21:00,23:00,CC53,Julio Cesar Dos Reis
+IC,MC536,MC536 A,Sexta,19:00,21:00,CC53,Julio Cesar Dos Reis
+IC,MC536,MC536 A,Sexta,21:00,23:00,CC00,Julio Cesar Dos Reis
+IC,MC558,MC558 A,Segunda,14:00,16:00,PB14,Santiago Valdes Ravelo
+IC,MC558,MC558 A,Quarta,14:00,16:00,PB14,Santiago Valdes Ravelo
+IC,MC602,MC602 A,Terça,19:00,21:00,CB16,Ricardo Pannain
+IC,MC602,MC602 A,Quinta,21:00,23:00,PB13,Ricardo Pannain
+IC,MC621,MC621 A,Sexta,14:00,18:00,CC00,Fabio Luiz Usberti
+IC,MC646,MC646 A,Segunda,16:00,18:00,CB11,Bruno Barbieri De Pontes Cafeo
+IC,MC646,MC646 A,Quarta,16:00,18:00,CB11,Bruno Barbieri De Pontes Cafeo
+IC,MC656,MC656 A,Terça,08:00,10:00,CB07,Breno Bernard Nicolau De Franca
+IC,MC656,MC656 A,Quinta,08:00,10:00,CB07,Breno Bernard Nicolau De Franca
+IC,MC658,MC658 A,Segunda,14:00,16:00,CB11,Flavio Keidi Miyazawa
+IC,MC658,MC658 A,Quarta,14:00,16:00,CB11,Flavio Keidi Miyazawa
+IC,MC668,MC668 A,Segunda,14:00,16:00,CC51,Zanoni Dias
+IC,MC668,MC668 A,Quarta,14:00,16:00,CC51,Zanoni Dias
+IC,MC714,MC714 A,Terça,21:00,23:00,CB11,Carlos Alberto Astudillo Trujillo
+IC,MC714,MC714 A,Quinta,19:00,21:00,CB11,Carlos Alberto Astudillo Trujillo
+IC,MC732,MC732 A,Segunda,16:00,18:00,PB15,Rodolfo Jardim De Azevedo
+IC,MC732,MC732 A,Quarta,16:00,18:00,PB15,Rodolfo Jardim De Azevedo
+IC,MC750,MC750 A,Terça,21:00,23:00,CB08,Emanuel Felipe Duarte
+IC,MC750,MC750 A,Quinta,19:00,21:00,CB08,Emanuel Felipe Duarte
+IC,MC821,MC821 A,Sexta,14:00,18:00,CC03,Fabio Luiz Usberti
+IC,MC826,MC826 A,Segunda,14:00,16:00,CC53,Marcos Medeiros Raimundo
+IC,MC832,MC832 A,Terça,14:00,16:00,CB08,Edmundo Roberto Mauro Madeira
+IC,MC832,MC832 A,Quinta,14:00,16:00,CB08,Edmundo Roberto Mauro Madeira
+IC,MC833,MC833 A,Terça,19:00,21:00,CC00,Nelson Luis Saldanha Da Fonseca
+IC,MC833,MC833 B,Terça,19:00,21:00,CC03,Nelson Luis Saldanha Da Fonseca
+IC,MC853,MC853 A,Sexta,19:00,23:00,CC03,Islene Calciolari Garcia
+IC,MC855,MC855 A,Sexta,19:00,23:00,CC04,Paulo Licio De Geus
+IC,MC859,MC859 A,Sexta,14:00,18:00,CC04,Ruben Interian Kovaliova
+IC,MC878,MC878 A,Terça,19:00,21:00,CC51,Christiane Neme Campos
+IC,MC878,MC878 A,Quinta,19:00,21:00,CC51,Christiane Neme Campos
+IC,MC886,MC886 A,Segunda,21:00,23:00,CB09,Marcos Medeiros Raimundo
+IC,MC886,MC886 A,Quarta,19:00,21:00,CB09,Marcos Medeiros Raimundo
+IC,MC886,MC886 B,Terça,14:00,16:00,CC51,Sandra Eliza Fontes De Avila
+IC,MC886,MC886 B,Quinta,14:00,16:00,CC51,Sandra Eliza Fontes De Avila
+IC,MC908,MC908 A,Terça,19:00,21:00,CC52,Joao Meidanis
+IC,MC908,MC908 A,Quinta,21:00,23:00,CC52,Joao Meidanis
+IC,MC908,MC908 B,Terça,14:00,16:00,CC53,Ruben Interian Kovaliova
+IC,MC908,MC908 B,Quinta,14:00,16:00,CC53,Ruben Interian Kovaliova
+IC,MC921,MC921 A,Segunda,21:00,23:00,PB17,Herve Cedric Yviquel
+IC,MC921,MC921 A,Quarta,19:00,21:00,PB17,Herve Cedric Yviquel
+IC,MC921,MC921 A,Quarta,21:00,23:00,CC00,Herve Cedric Yviquel
+IC,MC921,MC921 B,Segunda,21:00,23:00,PB17,Herve Cedric Yviquel
+IC,MC921,MC921 B,Quarta,19:00,21:00,PB17,Herve Cedric Yviquel
+IC,MC921,MC921 B,Quinta,21:00,23:00,CC00,Herve Cedric Yviquel
+IC,MC934,MC934 A,Quarta,14:00,16:00,CC53,Marcos Medeiros Raimundo
+IC,MC938,MC938 A,Terça,19:00,21:00,CC85,Julio Cesar Lopez Hernandez
+IC,MC938,MC938 A,Quinta,19:00,21:00,CC85,Julio Cesar Lopez Hernandez
+IC,MC959,MC959 A,Segunda,16:00,18:00,CC51,Marcelo Da Silva Reis
+IC,MC959,MC959 A,Quarta,16:00,18:00,CC51,Marcelo Da Silva Reis
+IC,MC960,MC960 A,Segunda,19:00,21:00,CC53,Herve Cedric Yviquel
+IC,MC960,MC960 A,Quinta,19:00,21:00,CC52,Herve Cedric Yviquel
+IC,MC963,MC963 A,Terça,14:00,16:00,CC52,Juliana Freitag Borin
+IC,MC963,MC963 A,Quinta,14:00,16:00,CC52,Juliana Freitag Borin
+IC,MC973,MC973 A,Segunda,19:00,21:00,CC51,Rodolfo Jardim De Azevedo
+IC,MC973,MC973 A,Quarta,19:00,21:00,CC51,Rodolfo Jardim De Azevedo

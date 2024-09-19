@@ -1,0 +1,62 @@
+Instituto,Disciplina,Turma,Dia da Semana,Horário Inicio,Horário Fim,Sala,Docentes
+CEL,LA092,LA092 A,Terça,08:00,10:00,PB04,Joacyr Tupinambas De Oliveira
+CEL,LA092,LA092 C,Terça,10:00,12:00,PB04,Joacyr Tupinambas De Oliveira
+CEL,LA111,LA111 A,Segunda,12:00,14:00,CI01,Bartira Takiuti Ginde
+CEL,LA111,LA111 B,Segunda,14:00,16:00,CI01,Bartira Takiuti Ginde
+CEL,LA111,LA111 C,Terça,12:00,14:00,CI01,Bartira Takiuti Ginde
+CEL,LA111,LA111 D,Terça,14:00,16:00,CI01,Bartira Takiuti Ginde
+CEL,LA112,LA112 A,Segunda,14:00,16:00,CI07,Leny Pereira Costa
+CEL,LA112,LA112 B,Quarta,08:00,12:00,CI15,Guilherme Jotto Kawachi
+CEL,LA112,LA112 C,Terça,19:00,21:00,CI11,Maria Victoria Guinle Vivacqua
+CEL,LA112,LA112 D,Terça,08:00,10:00,CI07,Leny Pereira Costa
+CEL,LA113,LA113 A,Segunda,14:00,16:00,CI11,Cynthia Pires Amaral
+CEL,LA113,LA113 B,Terça,14:00,16:00,CI09,Tania Regina Gomes Soares
+CEL,LA113,LA113 C,Terça,19:00,21:00,CI09,Tania Regina Gomes Soares
+CEL,LA113,LA113 D,Terça,16:00,18:00,CI11,Cynthia Pires Amaral
+CEL,LA113,LA113 E,Segunda,14:00,16:00,CI09,Edilene Cristina Naressi
+CEL,LA113,LA113 F,Terça,16:00,18:00,CI09,Tania Regina Gomes Soares
+CEL,LA113,LA113 G,Segunda,18:00,20:00,CI09,Edilene Cristina Naressi
+CEL,LA113,LA113 H,Segunda,16:00,18:00,CI09,Edilene Cristina Naressi
+CEL,LA113,LA113 I,Terça,14:00,16:00,CI11,Cynthia Pires Amaral
+CEL,LA114,LA114 A,Segunda,14:00,16:00,CI10,Norma Wucherpfennig
+CEL,LA114,LA114 B,Terça,14:00,16:00,CI10,Norma Wucherpfennig
+CEL,LA114,LA114 C,Terça,19:00,21:00,CI10,Norma Wucherpfennig
+CEL,LA118,LA118 A,Segunda,14:00,16:00,CB15,Regina Celia Da Silva
+CEL,LA118,LA118 C,Terça,19:00,21:00,CB15,Regina Celia Da Silva
+CEL,LA119,LA119 A,Segunda,14:00,16:00,CI16,Romilda Mochiuti
+CEL,LA119,LA119 C,Terça,19:00,21:00,CI16,Romilda Mochiuti
+CEL,LA167,LA167 A,Segunda,08:00,10:00,CI14,Patricia Aparecida De Aquino
+CEL,LA167,LA167 B,Segunda,10:00,12:00,CI14,Patricia Aparecida De Aquino
+CEL,LA167,LA167 C,Terça,10:00,12:00,CI14,Patricia Aparecida De Aquino
+CEL,LA212,LA212 A,Segunda,14:00,16:00,CI04,Emeli Borges Pereira Luz
+CEL,LA212,LA212 B,Terça,10:00,12:00,CI15,Guilherme Jotto Kawachi
+CEL,LA212,LA212 C,Terça,14:00,16:00,CI15,Guilherme Jotto Kawachi
+CEL,LA217,LA217 A,Segunda,10:00,12:00,CI11,Meirelen Salviano Almeida
+CEL,LA267,LA267 A,Terça,08:00,10:00,CI14,Patricia Aparecida De Aquino
+CEL,LA311,LA311 A,Segunda,12:00,14:00,CI13,Ayako Akamine
+CEL,LA311,LA311 B,Terça,12:00,14:00,CI13,Ayako Akamine
+CEL,LA311,LA311 C,Terça,16:00,18:00,CI13,Ayako Akamine
+CEL,LA312,LA312 A,Segunda,16:00,18:00,CI04,Emeli Borges Pereira Luz
+CEL,LA312,LA312 B,Terça,14:00,16:00,CI04,Emeli Borges Pereira Luz
+CEL,LA312,LA312 C,Terça,21:00,23:00,CI11,Maria Victoria Guinle Vivacqua
+CEL,LA313,LA313 A,Segunda,16:00,18:00,CI11,Cynthia Pires Amaral
+CEL,LA313,LA313 B,Segunda,10:00,12:00,CI09,Edilene Cristina Naressi
+CEL,LA313,LA313 C,Terça,21:00,23:00,CI09,Tania Regina Gomes Soares
+CEL,LA314,LA314 A,Segunda,16:00,18:00,CI10,Norma Wucherpfennig
+CEL,LA314,LA314 C,Terça,21:00,23:00,CI10,Norma Wucherpfennig
+CEL,LA315,LA315 A,Terça,08:00,10:00,CI06,Nivaldo Dos Santos
+CEL,LA315,LA315 B,Terça,14:00,16:00,CI06,Nivaldo Dos Santos
+CEL,LA317,LA317 A,Segunda,12:00,14:00,CI11,Meirelen Salviano Almeida
+CEL,LA318,LA318 A,Segunda,16:00,18:00,CI14,Regina Celia Da Silva
+CEL,LA318,LA318 C,Terça,21:00,23:00,CI14,Regina Celia Da Silva
+CEL,LA319,LA319 A,Segunda,16:00,18:00,CI16,Romilda Mochiuti
+CEL,LA319,LA319 C,Terça,21:00,23:00,CI16,Romilda Mochiuti
+CEL,LA412,LA412 A,Segunda,16:00,18:00,CI07,Leny Pereira Costa
+CEL,LA412,LA412 B,Terça,10:00,12:00,CI07,Leny Pereira Costa
+CEL,LA415,LA415 B,Terça,16:00,18:00,CI06,Nivaldo Dos Santos
+CEL,LA511,LA511 A,Terça,19:00,21:00,CI13,Ayako Akamine
+CEL,LA512,LA512 A,Terça,16:00,18:00,CI04,Emeli Borges Pereira Luz
+CEL,LA514,LA514 A,Segunda,12:00,14:00,CI15,Norma Wucherpfennig
+CEL,LA514,LA514 B,Segunda,19:00,21:00,CI15,Norma Wucherpfennig
+CEL,LA518,LA518 A,Terça,16:00,18:00,CI14,Regina Celia Da Silva
+CEL,LA612,LA612 A,Terça,16:00,18:00,CI15,Guilherme Jotto Kawachi
