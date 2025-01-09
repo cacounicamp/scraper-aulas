@@ -1,4 +1,3 @@
-from typing import Any, AsyncGenerator
 import aiohttp
 import asyncio
 from bs4 import BeautifulSoup 
@@ -55,6 +54,7 @@ class Turma:
     nome : str
     docentes :  list[str]
     aulas: list[Aula]
+    reservas: list[int]
 
 
 @dataclass
@@ -86,6 +86,7 @@ class Crowler:
         for intituto in lista:
             institutos.append(await self.extrair_instituto(intituto.find("a")["href"]))
         return institutos
+    
     async def extrair_instituto(self, url: str) -> Instituto:
         print("Extraindo:", url.rsplit("/",1)[-1])
         soup = await self.get_soup(url)
@@ -99,7 +100,6 @@ class Crowler:
             qt_added+=1
             if(qt_added >= 10):
                 diciplinas.extend(await asyncio.gather(*pool))
-                print("added to pool")
                 pool = []
                 qt_added = 0
         diciplinas.extend(await asyncio.gather(*pool))
@@ -110,21 +110,25 @@ class Crowler:
         soup = await self.get_soup(url)
         turmas = list(map(self.extrair_turma, soup.find_all(class_="panel")))
         codigo = soup.find("h1").text.split("-")[0].strip()
-        nome = soup.find("h1").text.split("-")[0].strip()
+        nome = soup.find("h1").text.split("-")[1].strip()
         print("Completo:",url.rsplit("/",2)[-2] +"/"+ url.rsplit("/",2)[-1])
         return Disciplina(codigo, nome, turmas)
     
     def extrair_turma(self, panel: BeautifulSoup) -> Turma:
         nome =  panel.find(class_="label").text.strip()
-        aulas = []        
+        aulas = []       
+        reservas = [] 
         for horario in panel.select(".horariosFormatado > li"):
             aulas.append(Aula(horario.find(class_="diaSemana").text, HorarioAula.from_str(horario.find(class_="horarios").text), horario.find(class_="salaAula").text.strip()))
+        for reserva in panel.select(".reservas > li"):
+            reservas.append(int(reserva.text.split("-")[0]))
+        
         docentes = []
         lista_docentes = panel.find(class_="docentes")
         if lista_docentes != None:
             for docente in lista_docentes.find_all("li"):
                 docentes.append(docente.text.strip())    
-        return Turma(nome, docentes, aulas)
+        return Turma(nome, docentes, aulas, reservas)
 
 # Salva em arquivo CSV
 
@@ -141,7 +145,7 @@ def save_data_to_csv(data : list[Instituto], filename : str) -> None:
             for disciplina in instituto.diciplinas:
                 for turma in disciplina.turmas:
                     for aula in turma.aulas:
-                        writer.writerow([instituto.nome, disciplina.nome, disciplina.nome + " " + turma.nome, aula.dia_semana, aula.horario.inicio, aula.horario.fim, aula.sala, ', '.join(turma.docentes)])
+                        writer.writerow([instituto.nome, disciplina.codigo, disciplina.nome, turma.nome, aula.dia_semana, aula.horario.inicio, aula.horario.fim, aula.sala, ', '.join(turma.docentes), ', '.join(map(str, turma.reservas))])
     
     print(f"Dados salvos em {filename} com sucesso.")
 
@@ -211,5 +215,6 @@ async def main() -> None:
     
 
 
-loop = asyncio.get_event_loop()
+loop = asyncio.new_event_loop()
+asyncio.set_event_loop(loop)
 loop.run_until_complete(main())
