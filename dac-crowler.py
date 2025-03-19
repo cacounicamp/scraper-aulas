@@ -12,7 +12,7 @@ from aiohttp_retry import RetryClient, JitterRetry
 import csv
 import os
 import time
-
+from dataclasses_json import dataclass_json
 
 handler = logging.StreamHandler(sys.stdout)
 logging.basicConfig(handlers=[handler])
@@ -34,6 +34,7 @@ async def on_request_start(
 
 # Classes
 
+@dataclass_json
 @dataclass 
 class HorarioAula:
     inicio: str
@@ -43,27 +44,31 @@ class HorarioAula:
         inicio, fim = string.split("-")
         return HorarioAula(inicio.strip(), fim.strip())
 
+@dataclass_json
 @dataclass
 class Aula:
     dia_semana: str 
     horario: HorarioAula
     sala: str
 
+@dataclass_json
 @dataclass
 class Turma:
     nome : str
-    docentes :  list[str]
+    docentes :  list[str]   
     aulas: list[Aula]
     reservas: list[int]
 
 
+@dataclass_json
 @dataclass
 class Disciplina:
     codigo: str
     nome: str
-    turmas: list[Turma]    
+    turmas: list[Turma]
 
 
+@dataclass_json
 @dataclass
 class Instituto: 
     nome: str
@@ -129,6 +134,13 @@ class Crowler:
             for docente in lista_docentes.find_all("li"):
                 docentes.append(docente.text.strip())    
         return Turma(nome, docentes, aulas, reservas)
+
+
+def save_data_to_json(data : list[Instituto], filename : str) -> None:
+    with open(filename, 'a', newline='') as f:
+        value = Instituto.schema().dumps(data, many=True)
+        f.write(value)
+
 
 # Salva em arquivo CSV
 
@@ -211,7 +223,7 @@ async def main() -> None:
     trace_config.on_request_start.append(on_request_start)
     async with RetryClient(retry_options=retry_options, trace_configs=[trace_config])as session:
         crowler = Crowler(session)
-        save_data_to_csv( [await crowler.extrair_instituto(base_url)], "./save2024s2-2.csv");
+        save_data_to_json( [await crowler.extrair_instituto(base_url)], "./save2024s2-2.json");
     
 
 
