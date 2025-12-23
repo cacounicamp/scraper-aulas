@@ -14,6 +14,7 @@ import os
 import time
 from dataclasses_json import dataclass_json
 import random
+from cache import CachedPageLoader  
 handler = logging.StreamHandler(sys.stdout)
 logging.basicConfig(handlers=[handler])
 logger = logging.getLogger(__name__)
@@ -78,13 +79,13 @@ class Instituto:
 
 @dataclass
 class Crowler:
-    session: ClientSession
-    async def get_soup(self, url: str ) -> BeautifulSoup:
-        async with self.session.get(url) as response:
-            page = await response.text()
-        return BeautifulSoup(page, 'html.parser')
+    page_loader : CachedPageLoader
+    async def get_soup(self, url: str ) -> tuple[bool, BeautifulSoup]:
+        
+        cached, page = await self.page_loader.get(url)
+        return cached, BeautifulSoup(page, 'html.parser')
     async def extrair_tudo(self, url : str) -> list[Instituto]:
-        soup = await self.get_soup(url)
+        cached, soup = await self.get_soup(url)
         institutos = []
         lista = soup.find(class_="lista-oferecimento").find_all(class_="item")
         for intituto in lista:
@@ -95,29 +96,33 @@ class Crowler:
     
     async def extrair_instituto(self, url: str) -> Instituto:
         print("Extraindo:", url.rsplit("/",1)[-1])
-        soup = await self.get_soup(url)
-        nome = soup.find("h1").text.split("-")[0].strip()
-        diciplinas = []
+        cached, soup = await self.get_soup(url)
         pool = []
         qt_added = 0
+        qt_requested = 0
         for dis in soup.find_all(class_="disciplina"):
             dis_url = dis.find("a")["href"]
             pool.append(self.extrair_disciplina(dis_url))
             qt_added+=1
             if(qt_added >= 5):
-                diciplinas.extend(await asyncio.gather(*pool))
+                reults = await asyncio.gather(*pool)
+                for res in reults:
+                    cached = res[0]
+                    if not cached:
+                        qt_requested +=1
+                        
                 pool = []
                 qt_added = 0
+            if qt_requested >= 5:
+                qt_requested = 0
                 await asyncio.sleep(1)
-        diciplinas.extend(await asyncio.gather(*pool))
-        return Instituto(nome, diciplinas)
     
-    async def extrair_disciplina(self, url: str) -> Disciplina:
+    async def extrair_disciplina(self, url: str) -> tuple[bool, Disciplina]:
         sleep_time = 2
         while True:
             try: 
                 print("Iniciado:", url.rsplit("/",2)[-2] +"/"+ url.rsplit("/",2)[-1])
-                soup = await self.get_soup(url)
+                cached, soup = await self.get_soup(url)
                 turmas = list(map(self.extrair_turma, soup.find_all(class_="panel")))
                 codigo = soup.find("h1").text.split("-")[0].strip()
                 nome = soup.find("h1").text.split("-")[1].strip()
@@ -126,11 +131,10 @@ class Crowler:
             except Exception as e:
                 print("Erro ao extrair disciplina, tentando novamente:", url)
                 print(e)
-                print(soup)
-                self.session = RetryClient(retry_options=retry_options)
+                self.page_loader.client = RetryClient(retry_options=retry_options)
                 sleep_time = sleep_time*random.uniform(1, 2)  
                 await asyncio.sleep(sleep_time*random.uniform(1, 2))
-        return Disciplina(codigo, nome, turmas)
+        return cached, Disciplina(codigo, nome, turmas)
     
     def extrair_turma(self, panel: BeautifulSoup) -> Turma:
         nome =  panel.find(class_="label").text.strip()
@@ -155,92 +159,15 @@ def save_data_to_json(data : list[Instituto], filename : str) -> None:
         f.write(value)
 
 
-# Salva em arquivo CSV
-
-def save_data_to_csv(data : list[Instituto], filename : str) -> None:
-    file_exists = os.path.isfile(filename)
-    
-    with open(filename, 'w', newline='') as csvfile:
-        writer = csv.writer(csvfile)
-        
-        if not file_exists:
-            writer.writerow(['Instituto','Disciplina', 'Nome', 'Turma', 'Dia da Semana', 'Horário Inicio', 'Horário Fim', 'Sala', 'Docentes'])
-        
-        for instituto in data:
-            for disciplina in instituto.diciplinas:
-                for turma in disciplina.turmas:
-                    for aula in turma.aulas:
-                        writer.writerow([instituto.nome, disciplina.codigo, disciplina.nome, turma.nome, aula.dia_semana, aula.horario.inicio, aula.horario.fim, aula.sala, ', '.join(turma.docentes), ', '.join(map(str, turma.reservas))])
-    
-    print(f"Dados salvos em {filename} com sucesso.")
-
-# Precisa atualizar esse codigo 
-def load_data_from_csv(filename):
-    data : list[Instituto] = []
-    
-    with open(filename, 'r') as csvfile:
-        reader = csv.reader(csvfile)
-        _ = next(reader) 
-        
-        for row in reader:
-            instituto = None
-            disciplina = None
-            turma = None
-            aula = None
-            
-            instituto_nome = row[0]
-            disciplina_nome = row[1]
-            turma_nome = row[2].split()[-1]  
-            dia_semana = row[3]
-            horario_inicio = row[4]
-            horario_fim = row[5]
-            sala = row[6]
-            docentes = row[7].split(', ')
-            
-            for i in data:
-                if i.nome == instituto_nome:
-                    instituto = i
-                    break
-            
-            if not instituto:
-                instituto = Instituto(instituto_nome, [])
-                data.append(instituto)
-            
-            for d in instituto.diciplinas:
-                if d.nome == disciplina_nome:
-                    disciplina = d
-                    break
-            
-            if not disciplina:
-                disciplina = Disciplina(disciplina_nome,[])
-                instituto.diciplinas.append(disciplina)
-            
-            for t in disciplina.turmas:
-                if t.nome == turma_nome:
-                    turma = t
-                    break
-            
-            if not turma:
-                turma = Turma(turma_nome,[], [])
-                disciplina.turmas.append(turma)
-            
-            aula = Aula(dia_semana,HorarioAula(horario_inicio, horario_fim), sala)
-            turma.aulas.append(aula)
-            turma.docentes.extend(docentes)
-    return data
-def load_data_from_json(filename: str) -> list[Instituto]:
-    with open(filename, 'r') as f:
-        data = f.read()
-        return Instituto.schema().loads(data, many=True)
-
 async def main() -> None:
     base_url = 'https://www.dac.unicamp.br/portal/caderno-de-horarios/2025/2/S/G/'
     # print(load_data_from_csv("./aulas.csv"))
     trace_config = TraceConfig()
     trace_config.on_request_start.append(on_request_start)
     async with RetryClient(retry_options=retry_options, trace_configs=[trace_config])as session:
-        crowler = Crowler(session)
-        save_data_to_csv(await crowler.extrair_tudo(base_url), "./save2025s2.csv");
+        loader = CachedPageLoader(session)
+        crowler = Crowler(loader)
+        await crowler.extrair_tudo(base_url);
     
 
 

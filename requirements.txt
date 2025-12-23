@@ -1,0 +1,5 @@
+aiohttp
+aiohttp-retry
+beautifulsoup4
+dataclasses-json
+requests
