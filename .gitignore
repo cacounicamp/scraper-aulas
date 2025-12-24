@@ -1,3 +1,4 @@
 .venv
-rawhtml
-pagestore.json
+rawhtml.db
+__pycache__
+*.pyc

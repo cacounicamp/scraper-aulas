@@ -97,6 +97,8 @@ class Crowler:
     async def extrair_instituto(self, url: str) -> Instituto:
         print("Extraindo:", url.rsplit("/",1)[-1])
         cached, soup = await self.get_soup(url)
+        nome = soup.find("h1").text.split("-")[0].strip()
+        diciplinas = []
         pool = []
         qt_added = 0
         qt_requested = 0
@@ -106,17 +108,19 @@ class Crowler:
             qt_added+=1
             if(qt_added >= 5):
                 reults = await asyncio.gather(*pool)
-                for res in reults:
-                    cached = res[0]
+                for cached, disciplina in reults:
                     if not cached:
                         qt_requested +=1
-                        
+                    diciplinas.append(disciplina)
                 pool = []
                 qt_added = 0
             if qt_requested >= 5:
                 qt_requested = 0
                 await asyncio.sleep(1)
-    
+        for cached, disciplina in await asyncio.gather(*pool):
+            diciplinas.append(disciplina)
+        return Instituto(nome, diciplinas)
+
     async def extrair_disciplina(self, url: str) -> tuple[bool, Disciplina]:
         sleep_time = 2
         while True:
@@ -158,6 +162,23 @@ def save_data_to_json(data : list[Instituto], filename : str) -> None:
         value = Instituto.schema().dumps(data, many=True)
         f.write(value)
 
+def save_data_to_csv(data : list[Instituto], filename : str) -> None:
+    file_exists = os.path.isfile(filename)
+    
+    with open(filename, 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        
+        if not file_exists:
+            writer.writerow(['Instituto','Disciplina', 'Nome', 'Turma', 'Dia da Semana', 'Horário Inicio', 'Horário Fim', 'Sala', 'Docentes'])
+        
+        for instituto in data:
+            for disciplina in instituto.diciplinas:
+                for turma in disciplina.turmas:
+                    for aula in turma.aulas:
+                        writer.writerow([instituto.nome, disciplina.codigo, disciplina.nome, turma.nome, aula.dia_semana, aula.horario.inicio, aula.horario.fim, aula.sala, ', '.join(turma.docentes), ', '.join(map(str, turma.reservas))])
+    
+    print(f"Dados salvos em {filename} com sucesso.")
+
 
 async def main() -> None:
     base_url = 'https://www.dac.unicamp.br/portal/caderno-de-horarios/2025/2/S/G/'
@@ -167,7 +188,8 @@ async def main() -> None:
     async with RetryClient(retry_options=retry_options, trace_configs=[trace_config])as session:
         loader = CachedPageLoader(session)
         crowler = Crowler(loader)
-        await crowler.extrair_tudo(base_url);
+        tudo = await crowler.extrair_tudo(base_url)
+        save_data_to_json(tudo, "./save2025s2.csv");
     
 
 
