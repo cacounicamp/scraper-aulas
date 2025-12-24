@@ -1,6 +1,4 @@
-import aiohttp
 import asyncio
-from bs4 import BeautifulSoup 
 from dataclasses import dataclass
 from aiohttp import ClientSession
 import logging
@@ -8,12 +6,8 @@ import sys
 from types import SimpleNamespace
 
 from aiohttp import ClientSession, TraceConfig, TraceRequestStartParams
-from aiohttp_retry import RetryClient, JitterRetry, Tuple
-import csv
-import os
-import time
+from aiohttp_retry import RetryClient, JitterRetry
 from dataclasses_json import dataclass_json
-import random
 import uuid
 
 import sqlite3
@@ -50,8 +44,13 @@ class PageStore:
     con : sqlite3.Connection
     def __init__(self, file: str = "rawhtml.db") -> None:
         self.con = sqlite3.connect(file)
-        self.con.execute('''CREATE TABLE IF NOT EXISTS pages
-                     (url TEXT PRIMARY KEY, content TEXT)''')
+        self.con.execute('''
+            CREATE TABLE IF NOT EXISTS pages (
+                url TEXT PRIMARY KEY,
+                content TEXT,
+                timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+            )
+            ''')
         self.con.commit()
 
     def page_exists(self, url: str) -> bool:
@@ -61,7 +60,7 @@ class PageStore:
 
     
     def save_page(self, url: str, content: str) -> None:
-        self.con.execute("INSERT OR REPLACE INTO pages (url, content) VALUES (?, ?)", (url, content))
+        self.con.execute("INSERT OR REPLACE INTO pages (url, content, timestamp) VALUES (?, ?, CURRENT_TIMESTAMP)", (url, content))
         self.con.commit()                
     
     def get_page_content(self, url: str) -> str | None:
@@ -75,10 +74,19 @@ class CachedPageLoader:
     client : RetryClient
     qt_session : int = 0
     lock_qt_session : asyncio.Lock = asyncio.Lock()
-    def __init__(self, client : RetryClient) -> None:
+    def __init__(self) -> None:
         self.page_cache = PageStore()
-        self.client = client
+        trace_config = TraceConfig()
+        trace_config.on_request_start.append(on_request_start)
+        self.client = RetryClient(retry_options=retry_options, trace_configs=[trace_config])
 
+    async def restart_session(self) -> None:
+        async with self.lock_qt_session:
+            await self.client.close()
+            self.client = RetryClient(raise_for_status=False, retry_options=retry_options, trace_configs=[TraceConfig(on_request_start=[on_request_start])])
+            self.qt_session += 1
+            logger.warning(f"Restarted session, qt_session={self.qt_session}")
+            
     async def get(self, url: str) -> tuple[bool, str]:
         if self.page_cache.page_exists(url):
             return (True, self.page_cache.get_page_content(url))

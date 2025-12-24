@@ -1,40 +1,15 @@
-import aiohttp
 import asyncio
 from bs4 import BeautifulSoup 
 from dataclasses import dataclass
-from aiohttp import ClientSession
-import logging
-import sys
-from types import SimpleNamespace
-
-from aiohttp import ClientSession, TraceConfig, TraceRequestStartParams
-from aiohttp_retry import RetryClient, JitterRetry
 import csv
 import os
-import time
 from dataclasses_json import dataclass_json
 import random
 from cache import CachedPageLoader  
-handler = logging.StreamHandler(sys.stdout)
-logging.basicConfig(handlers=[handler])
-logger = logging.getLogger(__name__)
-retry_options = JitterRetry(attempts=100,max_timeout=120)
+from datetime import datetime
 
-
-
-async def on_request_start(
-    session: ClientSession,
-    trace_config_ctx: SimpleNamespace,
-    params: TraceRequestStartParams,
-) -> None:
-    current_attempt = trace_config_ctx.trace_request_ctx['current_attempt']
-    if(current_attempt > 1):
-        logger.warning(params)
-    if retry_options.attempts <= current_attempt:
-        logger.warning('Wow! We are in last attempt')
 
 # Classes
-
 @dataclass_json
 @dataclass 
 class HorarioAula:
@@ -74,12 +49,26 @@ class Disciplina:
 class Instituto: 
     nome: str
     diciplinas: list[Disciplina]
+    
+@dataclass_json
+@dataclass
+class CadernoDeHorario:
+    ano: int
+    semestre: int
+    institutos: list[Instituto]
 
+def log(*args, **kwargs ) -> None:
+    print( datetime.now(),"-" , *args, **kwargs)
 ## Coletador de informação da Dac
 
 @dataclass
 class Crowler:
-    page_loader : CachedPageLoader
+    page_loader : CachedPageLoader 
+    def __init__(self, page_loader : CachedPageLoader | None = None) -> None:
+        if page_loader is None:
+            self.page_loader = CachedPageLoader()
+        else:
+            self.page_loader = page_loader
     async def get_soup(self, url: str ) -> tuple[bool, BeautifulSoup]:
         
         cached, page = await self.page_loader.get(url)
@@ -90,12 +79,11 @@ class Crowler:
         lista = soup.find(class_="lista-oferecimento").find_all(class_="item")
         for intituto in lista:
             url = intituto.find("a")["href"]
-            if url.rsplit("/",1)[-1] in ["IC", "FEEC", "IFGW", "IMECC", "IE", "IB", "FEM"]:
-                institutos.append(await self.extrair_instituto(url))
+            institutos.append(await self.extrair_instituto(url))
         return institutos
     
     async def extrair_instituto(self, url: str) -> Instituto:
-        print("Extraindo:", url.rsplit("/",1)[-1])
+        log("Extraindo:", url.rsplit("/",1)[-1])
         cached, soup = await self.get_soup(url)
         nome = soup.find("h1").text.split("-")[0].strip()
         diciplinas = []
@@ -125,17 +113,15 @@ class Crowler:
         sleep_time = 2
         while True:
             try: 
-                print("Iniciado:", url.rsplit("/",2)[-2] +"/"+ url.rsplit("/",2)[-1])
+                log("Iniciado:", url.rsplit("/",2)[-2] +"/"+ url.rsplit("/",2)[-1])
                 cached, soup = await self.get_soup(url)
                 turmas = list(map(self.extrair_turma, soup.find_all(class_="panel")))
                 codigo = soup.find("h1").text.split("-")[0].strip()
                 nome = soup.find("h1").text.split("-")[1].strip()
-                print("Completo:",url.rsplit("/",2)[-2] +"/"+ url.rsplit("/",2)[-1])
+                log("Completo:",url.rsplit("/",2)[-2] +"/"+ url.rsplit("/",2)[-1])
                 break
             except Exception as e:
-                print("Erro ao extrair disciplina, tentando novamente:", url)
-                print(e)
-                self.page_loader.client = RetryClient(retry_options=retry_options)
+                log("Erro ao extrair disciplina, tentando novamente:", url)
                 sleep_time = sleep_time*random.uniform(1, 2)  
                 await asyncio.sleep(sleep_time*random.uniform(1, 2))
         return cached, Disciplina(codigo, nome, turmas)
@@ -156,9 +142,13 @@ class Crowler:
                 docentes.append(docente.text.strip())    
         return Turma(nome, docentes, aulas, reservas)
 
-
+def save_caderno_to_json(caderno : CadernoDeHorario, filename : str) -> None:
+    with open(filename, 'w', encoding='utf-8') as f:
+        value = CadernoDeHorario.schema().dumps(caderno, many=True, ensure_ascii=False)
+        f.write(value)
+    
 def save_data_to_json(data : list[Instituto], filename : str) -> None:
-    with open(filename, 'a', newline='') as f:
+    with open(filename, 'a', encoding='utf-8') as f:
         value = Instituto.schema().dumps(data, many=True)
         f.write(value)
 
@@ -177,20 +167,22 @@ def save_data_to_csv(data : list[Instituto], filename : str) -> None:
                     for aula in turma.aulas:
                         writer.writerow([instituto.nome, disciplina.codigo, disciplina.nome, turma.nome, aula.dia_semana, aula.horario.inicio, aula.horario.fim, aula.sala, ', '.join(turma.docentes), ', '.join(map(str, turma.reservas))])
     
-    print(f"Dados salvos em {filename} com sucesso.")
+    log(f"Dados salvos em {filename} com sucesso.")
 
 
 async def main() -> None:
-    base_url = 'https://www.dac.unicamp.br/portal/caderno-de-horarios/2025/2/S/G/'
-    # print(load_data_from_csv("./aulas.csv"))
-    trace_config = TraceConfig()
-    trace_config.on_request_start.append(on_request_start)
-    async with RetryClient(retry_options=retry_options, trace_configs=[trace_config])as session:
-        loader = CachedPageLoader(session)
-        crowler = Crowler(loader)
-        tudo = await crowler.extrair_tudo(base_url)
-        save_data_to_json(tudo, "./save2025s2.csv");
-    
+    cadernos = []
+    crowler = Crowler()
+    for year in range(2018, 2026):
+        for semester in [1, 2]:
+            if year == 2026 and semester == 2:
+                continue
+            log("Iniciando extração para:", year, semester)
+            base_url = f'https://www.dac.unicamp.br/portal/caderno-de-horarios/{year}/{semester}/S/G/'
+            tudo = await crowler.extrair_tudo(base_url)
+            cadernos.append(CadernoDeHorario(year, semester, tudo))
+    save_caderno_to_json(cadernos, f"./cadernoshorario.json")
+    await crowler.page_loader.client.close()    
 
 
 loop = asyncio.new_event_loop()

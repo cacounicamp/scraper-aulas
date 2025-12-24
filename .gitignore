@@ -2,3 +2,4 @@
 rawhtml.db
 __pycache__
 *.pyc
+app.log
