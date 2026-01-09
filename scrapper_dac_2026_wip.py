@@ -2,43 +2,70 @@ from bs4 import BeautifulSoup
 import requests
 from urllib.parse import urljoin, urlparse
 import time
+from dataclasses import dataclass
 
-class tempData:
-    def __init__(self, id, carga, cred, name):
-        self.id = id
-        self.carga = carga
-        self.cred = cred
-        self.name = name
+@dataclass
+class Disciplina:
+    id: str
+    carga: str
+    cred: str
+    name: str
 
-    def __str__(self):
-        return f"{self.id}, {self.carga}, {self.cred}, {self.name}"
+@dataclass
+class Curso:
+    name: str
+    data: list[Disciplina]
+
+class Scraper:
+    def __init__(self, main_url: str, delay: float = 0.25):
+        self.main_url: str = main_url
+        self.delay: float = delay
+
+    def get_soup(self, url=None):
+        url = url or self.main_url
+        response = requests.get(url)
+        time.sleep(self.delay)
+        return BeautifulSoup(response.content, 'html.parser')
+    
+    def scrape_disciplina(self, url) -> list[Disciplina]:
+        list_disciplinas = []
+        soup = self.get_soup(url)
+
+        rows = soup.find_all('tr')
+
+        for row in rows:
+            cells = row.find_all('td')
+
+            id = cells[0].find('strong').find('a', class_ = "link").text.strip()
+            new = Disciplina(id, cells[1].text, cells[2].text, cells[3].text)
+            list_disciplinas.append(new)
+            time.sleep(self.delay)
+            print(f"scraped {new}: DISCIPLINA")
+
+        return list_disciplinas
+
+    def scrape_curso(self) -> list[Curso]:
+        list_cursos = []
+        soup = self.get_soup()
+
+        rows = soup.find_all('li', class_ = "accordion-navigation")
+        for row in rows:
+            curso_name = row.find('a', class_ = "rotulo-curso").text
+            link = row.find('a', string = "Currículo Pleno").get('href')
+            next_url = urljoin(self.main_url, link)
+
+            curso_disciplinas = self.scrape_disciplina(next_url)
+            new = Curso(curso_name, curso_disciplinas)
+            list_cursos.append(new)
+            time.sleep(self.delay)
+            print(f"scraped {new} : CURSO")
+        
+        return list_cursos
+        
+#MAIN
 
 url = "https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2026/index.html"
-res = requests.get(url)
 
-soup = BeautifulSoup(res.content, 'html.parser')
+scraper = Scraper(url)
+cursos = scraper.scrape_curso()
 
-links = list(n.get('href') for n in soup.find_all('a', string = "Currículo Pleno"))
-
-disciplinas = []
-
-for href in links:
-    next_url = urljoin(url, href)
-    res = requests.get(next_url)
-    soup = BeautifulSoup(res.content, 'html.parser')
-    rows = soup.find_all('tr')
-    
-    count = 0
-    for n, row in enumerate(rows):
-        pot = row.find_all('td')
-        id = pot[0].find('strong').find('a', class_ = "link").text.strip()
-        new = tempData(id, pot[1].text, pot[2].text, pot[3].text)
-        disciplinas.append(new)
-        if n > 5:
-            break
-    
-    if len(disciplinas) > 10:
-        break
-
-for n in disciplinas:
-    print(str(n))
